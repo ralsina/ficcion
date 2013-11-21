@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.10: http://docutils.sourceforge.net/" />
+<title></title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id$
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document">
+
+
+<p>El 4 de mayo de 2003 me desperté por última vez a las siete de la mañana. O, mejor dicho,
+me desperte por última vez, a las siete de la mañana. No, no me morí antes de volver a
+dormirme <a class="footnote-reference" href="#id11" id="id1">[1]</a>, pero nunca volví a despertarme.</p>
+<p>Me fuí a laburar como siempre, a una empresa de mierda en la que hacíamos <a class="footnote-reference" href="#id16" id="id2">[4]</a> unos
+juegos de mierda para celulares de mierda en un lenguaje de mierda, que empresas
+de mierda <a class="footnote-reference" href="#id17" id="id3">[5]</a> hacían comprar a adolescentes mediante publicidades engañosas en
+programas de tele a la madrugada, apuntados al segmento de público que tiene $15
+al mes para juegos de mierda <a class="footnote-reference" href="#id18" id="id4">[6]</a> pero no $100 para pagar cable.</p>
+<p>No era un mal laburo, excepto por la gente con la que trabajaba. Y para quién trabajaba.
+Bueno, y lo que hacíamos. Pero había café, y mi jefe no estaba muy atento,
+entonces siempre que pudiera producir mi parte del juego-clon en desarrollo del momento <a class="footnote-reference" href="#id21" id="id5">[8]</a>
+me podía pasar el tiempo hueveando. O webeando. O programando cosas que a nadie le
+interesaron jamás. Programas que dibujan flores fractales a partir del análisis del ruido
+ambiente. Código que busca correlaciones entre NASDAQ y la performance de los Knicks.
+Recolectando datos históricos sobre el uso de Serif/Sans Serif en páginas de distintos
+gobiernos. Graficando la frecuencia de palabras en cada volumen de A Song of Ice and
+Fire contra su popularidad en el tiempo en textos del proyecto Gutemberg. La clase de
+cosas que hacen todos los nerds con tiempo libre. <a class="footnote-reference" href="#id22" id="id6">[9]</a> <a class="footnote-reference" href="#id23" id="id7">[10]</a></p>
+<p>Me gustaría decir que uno de esos programas fue el motivo de lo que me viene pasando
+pero no creo que sea cierto. Si bien siempre tuve una tendencia a períodos maníacos
+de actividad constante, rara vez pasaba las veinte horas diarias de actividad, y
+nunca por más de dos semanas.</p>
+<p>Esa noche, mientras miraba Sol Negro en la tele, cabeceé. Fue ese típico momento en que
+resbalás de la conciencia, en que jurás que estás leyendo, o algo, y de golpe se te cayó
+el libro en la cara porque te quedaste dormido <a class="footnote-reference" href="#id30" id="id8">[14]</a> pero cuando terminé el cabeceo
+no estaba dormido, estaba despierto de nuevo.</p>
+<p>Tenía sueño, pero tenía sueño como cuando uno se levanta, no como cuando uno se acuesta. <a class="footnote-reference" href="#id31" id="id9">[15]</a>
+Apagué la tele y puse la radio. Estaban pasando Kashmir, y la dejé sonar. <a class="footnote-reference" href="#id32" id="id10">[16]</a></p>
+<hr class="docutils" />
+<table class="docutils footnote" frame="void" id="id11" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>¿Si no, como estaría escribiendo esto? <a class="footnote-reference" href="#id13" id="id12">[2]</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id13" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id12">[2]</a></td><td>Pensándolo mejor, si nunca me vuelvo a dormir, y me muero, sí, me
+morí antes de volver a dormirme, aunque haya escrito esto, pero ese
+&quot;me morí&quot; es difícil de conjugar, porque está en pasado, y es tu pasado,
+pero es mi futuro. <a class="footnote-reference" href="#id15" id="id14">[3]</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id15" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id14">[3]</a></td><td>Bueno, no me consta que sea mi futuro, pero podría serlo. O pudo. Vos sabrás.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id16" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[4]</a></td><td>Probablemente seguimos haciendo.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id17" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[5]</a></td><td>Pero más grandes.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id18" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[6]</a></td><td>Renovable semanalmente de forma automática. <a class="footnote-reference" href="#id20" id="id19">[7]</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id20" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id19">[7]</a></td><td>Para darte de baja tenés que mandar una secuencia distintiva de ADN por mensaje de texto al 4040.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id21" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id5">[8]</a></td><td>Era uno en que había que mover cosas de colores ubicadas en una grilla para formar grupos de tres
+o más elementos iguales. ¿Lo ubicás?</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id22" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id6">[9]</a></td><td>Todos tenemos una carpeta &quot;proyectos&quot; con cosas que nunca vas a ver.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id23" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id7">[10]</a></td><td><p class="first">Martin empieza a usar &quot;neep&quot; (Brassica napobrassica) en &quot;A storm of swords&quot;, el volumen tres.
+antes usaba &quot;turnip&quot;. Pero la cima de popularidad de neep es más de cien años anterior a
+la de turnip, y de hecho turnip es más usada todos los años desde 1793 hasta hoy. Teoría:
+en el año transcurrido en Westeros entre &quot;A game of Thrones&quot; y &quot;A storm of swords&quot;, en
+la tierra en realidad transcurrieron 200 años <em>hacia el pasado</em> y los nuevos volúmenes
+están siendo traducidos del Westerosi por ingleses georgianos que reciben el texto en
+alucinaciones místicas <a class="footnote-reference" href="#id27" id="id24">[11]</a>.</p>
+<p>Los traductores esconden sus volúmenes escritos a mano en la finca ancestral de la familia
+Martin <a class="footnote-reference" href="#id28" id="id25">[12]</a> de donde son llevados al nuevo mundo por Josiah Martin en 1860 y escondidos
+en un sótano, olvidados hasta que son redescubiertos por el pequeño George en 1957.
+Desilusionado por la cancelación de &quot;La Bella y La Bestia&quot;, George es alentado por
+Linda Hamilton a publicarlos como propios con modificaciones menores.</p>
+<p class="last">Esta teoría se comprobaría experimentalmente si el léxico en &quot;The Winds of Winter&quot; empieza
+a correlacionar mejor con Shakespeare. <a class="footnote-reference" href="#id29" id="id26">[13]</a></p>
+</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id27" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id24">[11]</a></td><td>En una clara demostración del carácter flemático nacional, disimulan esos raptos de posesión
+mística fingiendo que son paroxismos de placer al probar caramelos experimentales de regaliz
+saborizados arenque, con catastróficas repercusiones en la industria británica de la golosina
+que nos afectan hasta el día de hoy.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id28" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id25">[12]</a></td><td>En Worcestershire.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id29" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id26">[13]</a></td><td>Citation needed.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id30" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id8">[14]</a></td><td>Por suerte, no estaba leyendo. En esa época leía en una Toshiba Libretto ct50, que ponía de
+costado en mi panza, con la pantalla rotada 90 grados, pasando de página con la barra
+espaciadora que me quedaba justo abajo del pulgar izquierdo. Pegarte en la cara con una
+Libretto es doloroso.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id31" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id9">[15]</a></td><td>Es decir, si la cantidad de sueño es x, mi x era alto, pero mi dx/dt era negativo.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id32" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id10">[16]</a></td><td>Eso debería haberme alarmado. Kashmir es mi canción menos favorita del universo. Es una
+colección de clichés <a class="footnote-reference" href="#id34" id="id33">[17]</a> con la voz quejosa de Plant como hilo conductor y encima
+dura más de ocho minutos, que parecen veinte.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id34" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id33">[17]</a></td><td>Un ingenuo podrá decir que no son clichés porque Led Zeppelin lo hizo en 1974, pero no
+importa. Si hacés algo y otros te lo copian hasta que se vuelve un lugar común
+inaguantable, es un lugar común y no se aguanta aunque lo hayas hecho primero. Es lo
+contrario del argumento infantil de &quot;él lo empezó&quot; <a class="footnote-reference" href="#id39" id="id35">[18]</a> y me convence aún menos de
+la inocencia de Zeppelin. Deberían haber pensado, antes de escribir ese mamotreto,
+que serían imitados por legiones de roqueritos imberbes que querían tantas minitas
+como ellos, y serían responsables indirectos de horas de melodía roquero-orientaloide
+con progresión ominosa de acordes de guitarra. A pesar de lo que me molesta la falacia
+naturalista <a class="footnote-reference" href="#id40" id="id36">[19]</a> y la apelación al instinto irracional <a class="footnote-reference" href="#id40" id="id37">[19]</a> en este caso, cuando mi
+estómago me dice que Kashmir es una porquería, le tengo que dar la derecha <a class="footnote-reference" href="#id41" id="id38">[20]</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id39" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id35">[18]</a></td><td>No lo contrario en el sentido de &quot;yo lo empecé&quot; ni en el de &quot;el no lo empezó&quot; si no en el
+intento de que empezarlo fue algo bueno. Como decía mi viejo, no me importa quién empezó,
+lo que importa es que yo lo estoy terminando.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id40" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[19]</td><td><em>(<a class="fn-backref" href="#id36">1</a>, <a class="fn-backref" href="#id37">2</a>)</em> Bastante.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id41" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id38">[20]</a></td><td>Dar la derecha aparentemente significa &quot;reconocer la superioridad de alguien&quot; lo que me
+sorprende bastante, siempre pensé que significaba &quot;dar la razón&quot;. Hasta me había inventado
+una teoría asociando el lado derecho del cuerpo con el razonamiento, y el izquierdo con
+la emoción (ya que del izquierdo está el corazón, y del derecho... bueno, el hígado). O
+al vez algo de tráfico, ceder el lado derecho, pero en Argentina se maneja por la derecha
+y el paso se cede por la izquierda. Aunque eso es recién desde 1954, así que el sinsentido
+de este dicho, como tantos problemas nacionales, es culpa de Perón.</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
